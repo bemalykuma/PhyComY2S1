@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <ctype.h>
  
 int main() {
     char chr;
     scanf("%c", &chr);
-    switch (chr) {
+    switch (toupper(chr)) {
         case 'A' : printf("Genius");
                 break;
         case 'B' : printf("Good");
@@ -13,16 +14,6 @@ int main() {
         case 'D' : printf("Very Bad");
                 break;
         case 'F' : printf("Fail");
-                break;
-        case 'a' : printf("Genius");
-                break;
-        case 'b' : printf("Good");
-                break;
-        case 'c' : printf("Try Harder");
-                break;
-        case 'd' : printf("Very Bad");
-                break;
-        case 'f' : printf("Fail");
                 break;
         default : printf("Invalid Input");
     }
