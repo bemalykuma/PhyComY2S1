@@ -30,18 +30,18 @@ int main() {
 
 void playing_decision(struct Weather* wth) {
     if (strcmp(wth->outlook, "overcast") == 0) {
-        printf("Yes");
+        printf("yes");
     } else if (strcmp(wth->outlook, "rain") == 0) {
         if (wth->wind == 'F') {
-            printf("Yes");
+            printf("yes");
         } else {
-            printf("No");
+            printf("no");
         }
     } else if (strcmp(wth->outlook, "sunny") == 0) {
         if (wth->humidity > 77.5) {
-            printf("No");
+            printf("no");
         } else {
-            printf("Yes");
+            printf("yes");
         }
     }
 }
